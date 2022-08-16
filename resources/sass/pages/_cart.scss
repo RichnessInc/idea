@@ -1,0 +1,29 @@
+.paymentmethod {
+    transition: 0.4s;
+    &.paypal {
+        background-color: #003087;
+        &:hover {
+            background-color: #009cde;
+        }
+    }
+    &.home {
+        background-color: #4d148c;
+        &:hover {
+            background-color: #752fc0;
+        }
+    }
+    img {
+        display: inline-block;
+        width: 30px
+    }
+}
+.cartPage {
+    .gift_ticket_container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        button {
+            height: 45px;
+        }
+    }
+}

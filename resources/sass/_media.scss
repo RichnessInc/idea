@@ -1,0 +1,286 @@
+@media (max-width:320px) {
+    // Small Phone
+
+}
+
+@media (max-width:480px) {
+    .cartPage {
+        .clients-table tr {
+            height: 280px !important;
+        }
+        .richness-table {
+            td {
+                button,.main-btn{
+                    display: block !important;
+                    margin-bottom: 5px !important;
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+
+}
+    @media (max-width: 640px) {
+    // Start Global
+        .video-holder {
+            width: 100px !important;
+            height: 100px !important;
+            video {
+                height: 100% !important;
+                width: 100% !important;
+                display: block;
+                margin: auto;
+            }
+        }
+
+
+        #VControl {
+            video {
+                height: 203px !important;
+            }
+        }
+
+    .cartPage {
+        .grid.grid-cols-12.gap-4 {
+            padding: 10px !important;
+            .paymentmethod.visa.shadow {
+                display: block !important;
+                margin: auto !important;
+                width: 100% !important;
+                height: 50px !important;
+            }
+        }
+    }
+    .registerpage iframe {
+        width: 100% !important;
+        display: block !important;
+        margin: auto !important;
+    }
+    .richness-table {
+        tr {
+            font-size: 13px;
+            border-radius: 0;
+        }
+        td {
+            button {
+                display: block;
+                margin-bottom: 2px;
+                width: 100%;
+            }
+        }
+    }
+    .qup-dropdown {
+        display: none !important;
+    }
+    // End Global
+    // Start Clients
+    .clients-counter {
+        > div {
+            h3 {
+                font-size: 16px;
+            }
+        }
+    }
+    .clients-table {
+        tr {
+            height: 240px;
+        }
+    }
+    // End Client
+        // Start Users Page
+        .clients-table-cards {
+            tr {
+                height: 317px;
+            }
+        }
+        #cardIndexAdmin {
+            &:before {
+                content: '';
+            }
+
+            .richness-table {
+                tr {
+                    height: 324px;
+                }
+                td {
+                    a {
+                        display: block;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+        #adminUsersPage {
+            &:before {
+                content: '';
+            }
+
+            .richness-table {
+                tr {
+                    height: 268px;
+                }
+            }
+        }
+        #clientProductsPage {
+            &:before {
+                content: '';
+            }
+
+            .richness-table {
+                tr {
+                    height: 518px;
+                }
+            }
+        }
+        .controlChatCroupClass {
+            display: block !important;
+        }
+        // End Users Page
+        // Start Shipping Page
+        #adminShippingPage {
+            .richness-table {
+                tr {
+                    height: 369px;
+                }
+            }
+
+            // Ebd Shipping Page
+        }
+        #fevTable {
+             tr {
+                height: 328px;
+            }
+        }
+        #vipRequestAdmin {
+            .richness-table {
+                tr {
+                    height: 276px;
+                }
+            }
+        }
+        // Start Countries Page
+        #adminCountriesPage {
+            .richness-table {
+                tr {
+                    height: 234px;
+                }
+            }
+        }
+        // Ebd Countries Page
+        // Start Governments Page
+        #adminGovernments {
+            .richness-table {
+                tr {
+                    height: 232px;
+                }
+            }
+        }
+        // Ebd Governments Page
+        #adminPaymentPage {
+            .richness-table {
+                tr {
+                    height: 455px;
+                }
+            }
+        }
+        #ticket-gifts-page {
+            .richness-table {
+                tr {
+                    height: 276px;
+                }
+            }
+        }
+        #productRequestsPageAdmin {
+            .richness-table {
+                tr {
+                    height: 532px;
+                }
+            }
+        }
+        #adminResh {
+            .richness-table {
+                tr {
+                    height: 277px;
+                }
+            }
+        }
+        .profilePage nav ul {
+            display: contents;
+        }
+        .profilePage .clients-table tr {
+            height: 630px;
+        }
+        .cartPage {
+            .clients-table tr {
+                height: 280px !important;
+            }
+            .richness-table {
+                td {
+                    button,.main-btn{
+                        display: block !important;
+                        margin-bottom: 5px !important;
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+        #AdminClintsPage {
+            .clients-table tr {
+                height: 398px !important;
+                td {
+                   a {
+                       display: block !important;
+                       width: 100% !important;
+                       margin-bottom: 3px !important;
+                   }
+                }
+            }
+        }
+
+    }
+
+@media (min-width: 640px) {
+    .richness-table table {
+        display: inline-table !important;
+    }
+    .richness-table thead tr:not(:first-child) {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    // Tablet
+    .registerpage .holder {
+        height: 320px;
+        position: relative;
+    }
+    .profilePage {
+        .richness-table {
+            td {
+                button,.main-btn{
+                    display: block !important;
+                    margin-bottom: 5px !important;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1023px) {
+    // Large Tablet
+    .AltawusPage .method {
+        height: 100% !important;
+        line-height: 26px !important;
+    }
+}
+
+@media (max-width:639px) {
+    // Large Tablet
+
+}
+
+@media (max-width:767px) {
+
+}
+

@@ -1,0 +1,132 @@
+.help-chat {
+    .chat-section {
+        background-color: #FFF;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        .body,
+        .footer {
+            padding: 10px;
+        }
+        .body {
+            height: 300px;
+            overflow: auto;
+            .downloadFile {
+                background: linear-gradient(280deg, rgba(0, 174, 239, 1) 29%, rgba(0, 110, 185, 1) 84%);
+                padding: 10px;
+                border-radius: 5px;
+                color: #FFF;
+                width: fit-content;
+                font-size: 16px;
+                font-weight: 700;
+                display: block;
+            }
+            &>div {
+                margin-bottom: 12px;
+            }
+            &::-webkit-scrollbar {
+                width: 8px;
+            }
+            &::-webkit-scrollbar-track {
+                background-color: #dbdbdb;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $mainColorS;
+            }
+            .message-from {
+                background-color: #006eb9;
+                padding: 10px;
+                border-radius: 5px;
+                color: #FFF;
+                width: fit-content;
+                font-size: 16px;
+                font-weight: 700;
+                display: block;
+            }
+            .message {
+                padding: 10px;
+                border-radius: 5px;
+                color: #006eb9;
+                background-color: #e5e5e5;
+                width: fit-content;
+                font-size: 16px;
+                font-weight: 700;
+                display: block;
+            }
+        }
+        .footer {
+            textarea {
+                color: $mainColorS;
+                border: 1px solid $mainColorS;
+                border-radius: 10px;
+            }
+            .btns {
+                .input-holder {
+                    display: inline-block;
+                    position: relative;
+                    background-color: #007ac3;
+                    color: #FFF;
+                    height: 42px;
+                    top: -6px;
+                    border-radius: 5px;
+                    width: 110px;
+                    cursor: pointer;
+                    input {
+                        opacity: 0;
+                        z-index: 9999;
+                        position: relative;
+                        width: 110px;
+                        height: 42px;
+                    }
+                    label {
+                        position: absolute;
+                        top: 0;
+                        color: #FFF !important;
+                        text-align: center;
+                        width: 100%;
+                        line-height: 42px;
+                        right: 0;
+                    }
+                }
+                button {
+                    background-color: $mainColorS;
+                    color: #FFF;
+                    margin-top: 9px;
+                    margin-left: 3px;
+                    border-radius: 5px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    #help {
+        width: fit-content;
+        background-color: $mainColorS;
+        text-align: center;
+        font-size: 21px;
+        padding: 10px;
+        border-radius: 10px;
+        color: #FFF;
+        transition: 0.3s;
+        box-shadow: 0 3px 9px -1px #000;
+        &:hover {
+            box-shadow: 0 7px 9px -1px #000;
+        }
+    }
+    &.show {
+        right: 20px;
+    }
+}
+
+.groupPage {
+    .mesg {
+        border-top: 1px solid #afafaf;
+        padding-top: 3px;
+        margin-top: 2px;
+    }
+    .space {
+        display: flex;
+        justify-content: space-between;
+    }
+}

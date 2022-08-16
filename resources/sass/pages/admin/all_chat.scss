@@ -1,0 +1,40 @@
+#allChatsPage {
+    .unread {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #d33;
+        top: 25px;
+        left: 25px;
+        text-align: center;
+        font-size: 30px;
+        color: #DFFF;
+        border-radius: 50%;
+        line-height: 42px;
+    }
+    ul {
+        li {
+            transition: 0.5s;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                border: 0;
+                right: 0;
+                width: 0%;
+                height: 1.5px;
+                background-color: $mainColorS;
+                transition: 0.5s;
+            }
+            &:not(:last-child) {
+                border-bottom: 1.5px solid #d7d7d7;
+            }
+            &:hover {
+                background-color: #e9f0ff;
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

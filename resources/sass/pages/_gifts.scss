@@ -1,0 +1,40 @@
+.gifts-page {
+    position: relative;
+    .g-alert {
+        a {
+            color: #000;
+            text-decoration: underline
+        }
+    }
+    .gifts-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        gap: 20px;
+        &.sing {
+            .gift {
+                cursor: pointer !important;
+            }
+        }
+        .gift {
+            cursor: not-allowed;
+            img {
+                width: 100%;
+            }
+            span {
+                display: block;
+                text-align: center;
+                font-weight: bold;
+                font-size: 20px;
+                color: $mainColor;
+            }
+        }
+    }
+}
+
+.select-add {
+    border: 2px solid #d1d5db;
+    margin-top: 10px;
+    &.selelcted {
+        border: 2px solid $mainColorS;
+    }
+}

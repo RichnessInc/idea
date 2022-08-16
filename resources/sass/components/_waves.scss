@@ -1,0 +1,141 @@
+.waves-holder {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    .animation-container {
+        width: 300%;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        .sound-container {
+            position: relative;
+            width: 150px;
+            height: 100%;
+            display: inline-block;
+            margin-left: 4px;
+            .rect-2 {
+                animation-delay: 0.1s;
+                -webkit-animation-delay: 0.1s;
+            }
+            .rect-3 {
+                animation-delay: 0.2s;
+                -webkit-animation-delay: 0.2s;
+            }
+            .rect-4 {
+                animation-delay: 0.3s;
+                -webkit-animation-delay: 0.3s;
+            }
+            .rect-5 {
+                animation-delay: 0.4s;
+                -webkit-animation-delay: 0.4s;
+            }
+            .rect-6 {
+                animation-delay: 0.5s;
+                -webkit-animation-delay: 0.5s;
+            }
+        }
+        .sound-container>div {
+            position: relative;
+            height: 100%;
+            width: 10px;
+            background: $mainColorS;
+            display: inline-block;
+            animation: wave 3s infinite ease-in-out;
+            -webkit-animation: wave 3s infinite ease-in-out;
+            animation-play-state: paused;
+            &.running {
+                animation-play-state: running !important;
+
+
+            }
+        }
+    }
+}
+
+@keyframes time {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes wave {
+    0%,
+    100% {
+        transform: scaleY(1);
+        background: $mainColorS;
+    }
+    16.67% {
+        transform: scaleY(3);
+        background: $mainColor;
+    }
+    33.33% {
+        transform: scaleY(1);
+        background: $mainColor;
+    }
+    50% {
+        transform: scaleY(3);
+        background: $mainColorS;
+    }
+    66.67% {
+        transform: scaleY(1);
+        background: $mainColorS;
+    }
+    83.34% {
+        transform: scaleY(3);
+        background: $socondColor;
+    }
+}
+
+.audio-holder {
+    margin-top: 15px;
+    padding-top: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    audio {
+        display: none;
+    }
+    .controls {
+        padding-top: 10px;
+        height: 43px;
+        overflow: hidden;
+        i {
+            font-size: 30px;
+            color: $mainColorS;
+            cursor: pointer;
+        }
+        .status {
+            display: none;
+        }
+    }
+}
+.video-holder {
+    width: 276px;
+    .controls {
+        font-size: 25px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #FFF;
+        padding: 5px;
+        border-radius: 0 0 19px 0;
+        color: $mainColorS;
+        i {
+            font-size: 30px;
+            color: $mainColorS;
+            cursor: pointer;
+        }
+        .status {
+            display: none;
+        }
+    }
+}
